@@ -65,7 +65,7 @@ export const contactSection = {
     },
     {
       name: "LinkedIn",
-      url: "https://www.linkedin.com/in/mohamedisa",
+      url: "https://www.linkedin.com/in/mohamed-isa122/",
       icon: "https://skillicons.dev/icons?i=linkedin",
     },
     {
