@@ -1,6 +1,6 @@
 import { aboutSection } from "@/data/portfolioData";
 
-export default function AboutSection() {
+ function AboutSection() {
   return (
     <section id="about" className="py-16">
       <h2 className="text-3xl font-bold text-gray-900">{aboutSection.title}</h2>
@@ -8,3 +8,4 @@ export default function AboutSection() {
     </section>
   );
 }
+export default AboutSection;

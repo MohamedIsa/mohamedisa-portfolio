@@ -1,7 +1,7 @@
 import { spokenLanguages } from "@/data/portfolioData";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 
-export default function SpokenLanguagesSection() {
+ function SpokenLanguagesSection() {
     return (
         <section id="languages" className="py-16">
             <h2 className="text-3xl font-bold text-gray-900">Spoken Languages</h2>
@@ -22,3 +22,4 @@ export default function SpokenLanguagesSection() {
         </section>
     );
 }
+export default SpokenLanguagesSection;

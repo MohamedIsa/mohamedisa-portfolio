@@ -1,7 +1,7 @@
 import { devSkills } from "@/data/portfolioData";
 import { Card, CardHeader, CardTitle } from "@/components/ui/card";
 
-export default function DevSkillsSection() {
+ function DevSkillsSection() {
     return (
         <section id="dev-skills" className="py-16">
             <h2 className="text-3xl font-bold text-gray-900">Development Skills</h2>
@@ -20,3 +20,4 @@ export default function DevSkillsSection() {
         </section>
     );
 }
+export default DevSkillsSection;

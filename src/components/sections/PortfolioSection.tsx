@@ -1,7 +1,7 @@
 import { portfolioSection } from "@/data/portfolioData";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 
-export default function PortfolioSection() {
+function PortfolioSection() {
   return (
     <section id="portfolio" className="py-16">
       <h2 className="text-3xl font-bold text-gray-900">{portfolioSection.title}</h2>
@@ -30,3 +30,4 @@ export default function PortfolioSection() {
     </section>
   );
 }
+export default PortfolioSection;
