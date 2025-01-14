@@ -30,20 +30,13 @@ export const portfolioSection = {
     },
     {
       id: 3,
-      name: "Sama-Pet App",
-      description:
-        "A full-stack, cross-platform app built with Ionic-Angular, Laravel backend, and Firebase for storage.",
-      link: null,
-    },
-    {
-      id: 4,
       name: "QuizApp",
       description:
         "A Flutter app that allows students to take quizzes with Firebase for storage.",
       link: "https://github.com/MohamedIsa/QuizApp",
     },
     {
-      id: 5,
+      id: 4,
       name: "QuizHub",
       description:
         "A Kahoot-like website built with React and Supabase for real-time quiz functionality.",

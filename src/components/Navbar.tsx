@@ -3,21 +3,21 @@
 import Link from "next/link";
 import { useState } from "react";
 
- function Navbar() {
+function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <nav className="bg-gradient-to-r from-gray-900 to-gray-700 text-white py-4 fixed w-full z-10 shadow-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
-          {/* Logo or Site Title */}
+          
           <div className="text-2xl font-bold">
             <Link href="/" className="text-white hover:text-blue-500 transition duration-300">
               Mohamed Isa
             </Link>
           </div>
 
-          {/* Hamburger Menu for Mobile */}
+          
           <div className="sm:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
@@ -57,7 +57,7 @@ import { useState } from "react";
             </button>
           </div>
 
-          {/* Navigation Links */}
+         
           <div className="hidden sm:flex space-x-6">
             <Link href="#about" className="text-white hover:text-blue-500 transition duration-300">
               About
@@ -65,6 +65,9 @@ import { useState } from "react";
             <Link href="#portfolio" className="text-white hover:text-blue-500 transition duration-300">
               Portfolio
             </Link>
+            <a href="/MohamedCV.pdf" className="text-white hover:text-blue-500 transition duration-300" target="_blank" rel="noopener noreferrer">
+              CV
+            </a>
             <Link href="#contact" className="text-white hover:text-blue-500 transition duration-300">
               Contact
             </Link>
@@ -80,6 +83,9 @@ import { useState } from "react";
             <Link href="#portfolio" className="block text-white hover:text-blue-500 transition duration-300">
               Portfolio
             </Link>
+            <a href="/MohamedCV.pdf" className="block text-white hover:text-blue-500 transition duration-300" target="_blank" rel="noopener noreferrer">
+              CV
+            </a>
             <Link href="#contact" className="block text-white hover:text-blue-500 transition duration-300">
               Contact
             </Link>
