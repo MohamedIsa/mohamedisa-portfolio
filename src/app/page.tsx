@@ -7,7 +7,7 @@ import DevSkillsSection from "@/components/sections/DevSkillsSection";
 import ExperienceSection from "@/components/sections/ExperienceSection";
 import SpokenLanguagesSection from "@/components/sections/SpokenLanguagesSection";
 
-export default function Home() {
+function Home() {
   return (
     <>
       <Navbar />
@@ -23,3 +23,4 @@ export default function Home() {
     </>
   );
 }
+export default Home;

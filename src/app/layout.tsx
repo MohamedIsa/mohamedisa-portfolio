@@ -5,7 +5,7 @@ export const metadata = {
   description: "Showcasing my work and skills",
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className="scroll-smooth">
       <body className="bg-gray-50 text-gray-800 font-serif">
@@ -14,3 +14,5 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     </html>
   );
 }
+
+export default RootLayout;
