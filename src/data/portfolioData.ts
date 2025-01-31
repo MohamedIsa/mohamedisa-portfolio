@@ -79,6 +79,7 @@ export const devSkills = [
   { name: "Node.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
   { name: "Firebase", icon: "https://skillicons.dev/icons?i=firebase" },
   { name: "Flutter", icon: "https://skillicons.dev/icons?i=flutter" },
+  {name: "Linux", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"},
   { name: "Ionic", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ionic/ionic-original.svg" },
   { name: "Angular", icon: "https://skillicons.dev/icons?i=angular" },
   { name: "Tailwind CSS", icon: "https://skillicons.dev/icons?i=tailwind" },
