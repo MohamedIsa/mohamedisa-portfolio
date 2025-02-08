@@ -1,7 +1,7 @@
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/sections/HeroSection";
 import AboutSection from "@/components/sections/AboutSection";
-import PortfolioSection from "@/components/sections/PortfolioSection";
+import ProjectsSection from "@/components/sections/ProjectsSection";
 import ContactSection from "@/components/sections/ContactSection";
 import DevSkillsSection from "@/components/sections/DevSkillsSection"; 
 import ExperienceSection from "@/components/sections/ExperienceSection";
@@ -17,7 +17,7 @@ function Home() {
         <DevSkillsSection />
         <ExperienceSection /> 
         <SpokenLanguagesSection />
-        <PortfolioSection />
+        <ProjectsSection />
         <ContactSection />
       </main>
     </>

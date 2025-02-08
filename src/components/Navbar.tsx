@@ -62,15 +62,15 @@ function Navbar() {
             <Link href="#about" className="text-white hover:text-blue-500 transition duration-300">
               About
             </Link>
-            <Link href="#portfolio" className="text-white hover:text-blue-500 transition duration-300">
-              Portfolio
+              <Link href="#MyWork" className="text-white hover:text-blue-500 transition duration-300">
+              My Work
+            </Link>
+            <Link href="#contact" className="text-white hover:text-blue-500 transition duration-300">
+              Contact
             </Link>
             <a href="/MohamedCV.pdf" className="text-white hover:text-blue-500 transition duration-300" target="_blank" rel="noopener noreferrer">
               CV
             </a>
-            <Link href="#contact" className="text-white hover:text-blue-500 transition duration-300">
-              Contact
-            </Link>
           </div>
         </div>
 
@@ -80,15 +80,15 @@ function Navbar() {
             <Link href="#about" className="block text-white hover:text-blue-500 transition duration-300">
               About
             </Link>
-            <Link href="#portfolio" className="block text-white hover:text-blue-500 transition duration-300">
-              Portfolio
+            <Link href="#MyWork" className="block text-white hover:text-blue-500 transition duration-300">
+              My Work
+            </Link>
+            <Link href="#contact" className="block text-white hover:text-blue-500 transition duration-300">
+              Contact
             </Link>
             <a href="/MohamedCV.pdf" className="block text-white hover:text-blue-500 transition duration-300" target="_blank" rel="noopener noreferrer">
               CV
             </a>
-            <Link href="#contact" className="block text-white hover:text-blue-500 transition duration-300">
-              Contact
-            </Link>
           </div>
         )}
       </div>

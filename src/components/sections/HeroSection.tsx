@@ -1,4 +1,4 @@
-import { heroSection } from "@/data/portfolioData";
+import { heroSection } from "@/data/hero";
 import Link from "next/link";
 import { Button } from "../ui/button";
 function HeroSection() {
@@ -10,7 +10,7 @@ function HeroSection() {
       <p className="text-lg sm:text-xl mt-4 text-gray-600">
         {heroSection.description}
       </p>
-      <Link href="#portfolio">
+      <Link href="#MyWork">
         <div className="mt-6">
           <Button
             variant="default"

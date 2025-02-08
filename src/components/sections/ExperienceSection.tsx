@@ -1,4 +1,4 @@
-import { experienceSection } from "@/data/portfolioData";
+import { experienceSection } from "@/data/experience";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 
 function ExperienceSection() {

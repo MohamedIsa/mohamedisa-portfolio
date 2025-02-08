@@ -1,4 +1,4 @@
-import { spokenLanguages } from "@/data/portfolioData";
+import { spokenLanguages } from "@/data/languages";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 
  function SpokenLanguagesSection() {

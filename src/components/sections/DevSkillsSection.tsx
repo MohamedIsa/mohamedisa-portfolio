@@ -1,4 +1,4 @@
-import { devSkills } from "@/data/portfolioData";
+import { devSkills } from "@/data/skills";
 import { Card, CardHeader, CardTitle } from "@/components/ui/card";
 
  function DevSkillsSection() {

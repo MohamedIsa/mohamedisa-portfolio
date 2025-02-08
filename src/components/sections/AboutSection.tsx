@@ -1,4 +1,4 @@
-import { aboutSection } from "@/data/portfolioData";
+import { aboutSection } from "@/data/about";
 
  function AboutSection() {
   return (

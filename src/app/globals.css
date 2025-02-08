@@ -8,13 +8,21 @@ body {
 }
 a:hover {
   color: var(--primary);
-  text-decoration: underline;
 }
 
 button:hover {
   background-color: var(--primary);
   color: var(--primary-foreground);
 }
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
