@@ -16,7 +16,7 @@ export const projectsSection: Projects = {
   projects: [
     {
       id: 1,
-      name: "Web Development Project",
+      name: "Questionnaire Website ",
       description:
         "A web-based application to create and manage questionnaires using PHP, HTML/CSS, JavaScript, and MySQL.",
       github: "https://github.com/MohammedBaqerAdnan/WebDevolpment_Project",
@@ -35,14 +35,6 @@ export const projectsSection: Projects = {
       description:
         "A Flutter app that allows students to take quizzes with Firebase for storage.",
       github: "https://github.com/MohamedIsa/QuizApp",
-    },
-    {
-      id: 4,
-      name: "QuizHub",
-      description:
-        "A Kahoot-like website built with React and Supabase for real-time quiz functionality.",
-      github: "https://github.com/MohamedIsa/QuizHub",
-      live: "https://quizhub.me/",
     },
   ],
 }; 

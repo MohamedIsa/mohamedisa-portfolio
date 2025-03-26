@@ -42,7 +42,11 @@ export const devSkills: Skill[] = [
     name: "Next.js",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
   },
-  { name: "Supabase", icon: "https://skillicons.dev/icons?i=supabase" },
+
   { name: "React", icon: "https://skillicons.dev/icons?i=react" },
   { name: "Vite", icon: "https://skillicons.dev/icons?i=vite" },
+  {
+    name: "Google Sites",
+    icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Google_Sites_2020_Logo.svg/654px-Google_Sites_2020_Logo.svg.png",
+  },
 ];

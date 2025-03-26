@@ -18,10 +18,18 @@ export const experienceSection: ExperienceSection = {
     {
       id: 1,
       title: "Front-End Developer Intern",
-      company: "Sama Health Care",
+      company: "Sama Bahrain HealthCare",
       year: "July-2024 - Sept-2024",
       description:
         "Developing a cross-platform and full-stack website and mobile app using Ionic-Angular and Laravel for the backend.",
+    },
+    {
+      id:2,
+      title:"Web Developer Intern",
+      company: "Ministry of Justice, Islamic Affairs and Waqf",
+      year: "March-2024 - ongoing",
+      description:
+        "Google Sites was used to turn a book into a website, creating and organizing pages for reading and ease of navigation while guaranteeing device responsiveness and accessibility.",
     },
   ],
 };
