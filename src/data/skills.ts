@@ -47,6 +47,6 @@ export const devSkills: Skill[] = [
   { name: "Vite", icon: "https://skillicons.dev/icons?i=vite" },
   {
     name: "Google Sites",
-    icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Google_Sites_2020_Logo.svg/654px-Google_Sites_2020_Logo.svg.png",
+    icon: "https://fonts.gstatic.com/s/i/productlogos/sites_2020q4/v3/web-48dp/logo_sites_2020q4_color_2x_web_48dp.png",
   },
 ];
