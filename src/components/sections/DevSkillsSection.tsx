@@ -13,7 +13,7 @@ function DevSkillsSection() {
                 <div className="text-center mb-12">
                     <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Development Skills</h2>
                     <p className="text-gray-600 max-w-2xl mx-auto">
-                        These are the technologies and tools I'm proficient with, continuously expanding my expertise.
+                        These are the technologies and tools I&apos;m proficient with, continuously expanding my expertise.
                     </p>
                 </div>
                 
@@ -47,7 +47,7 @@ function DevSkillsSection() {
                 
                 <div className="mt-12 text-center">
                     <p className="text-gray-600 italic">
-                        I'm always learning and adding new skills to my toolkit!
+                        I&apos;m always learning and adding new skills to my toolkit!
                     </p>
                 </div>
             </div>
