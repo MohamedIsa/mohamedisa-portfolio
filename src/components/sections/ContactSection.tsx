@@ -1,4 +1,5 @@
 import { contactSection } from "@/data/contact";
+import Image from "next/image";
 
  function ContactSection() {
   return (
@@ -9,10 +10,10 @@ import { contactSection } from "@/data/contact";
       </div>
       <div className="mt-8 flex flex-col items-center space-y-4 sm:flex-row sm:justify-center sm:space-x-4 sm:space-y-0">
         {contactSection.links.map((link) => (
-          <a key={link.name} href={link.url} target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2">
-        <img src={link.icon} alt={link.name} className="w-6 h-6" />
-        <span className="text-blue-600">{link.name}</span>
-          </a>
+            <a key={link.name} href={link.url} target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2">
+            <Image src={link.icon} alt={link.name} width={24} height={24} className="w-6 h-6" />
+            <span className="text-blue-600">{link.name}</span>
+            </a>
         ))}
       </div>
     </section>

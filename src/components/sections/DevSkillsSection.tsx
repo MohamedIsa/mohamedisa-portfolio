@@ -2,6 +2,7 @@
 import { devSkills } from "@/data/skills";
 import { Card, CardHeader, CardTitle } from "@/components/ui/card";
 import { useState } from "react";
+import  Image  from "next/image";
 
 function DevSkillsSection() {
     const [hoveredSkill, setHoveredSkill] = useState<number | null>(null);
@@ -28,9 +29,11 @@ function DevSkillsSection() {
                         >
                             <CardHeader className="flex flex-col items-center text-center p-4">
                                 <div className="p-4 rounded-full bg-blue-50 mb-3">
-                                    <img 
+                                <Image 
                                         src={skill.icon} 
                                         alt={skill.name} 
+                                        width={48} 
+                                        height={48} 
                                         className="w-12 h-12"
                                     />
                                 </div>

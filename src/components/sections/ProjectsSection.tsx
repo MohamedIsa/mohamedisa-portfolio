@@ -3,6 +3,7 @@ import { projectsSection } from "@/data/projects";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { useState } from "react";
 import { GitHubIcon, GlobeIcon } from "@/components/ui/icons";
+import Image from "next/image";
 
 function ProjectsSection() {
   const [hoveredProject, setHoveredProject] = useState<number | null>(null);
@@ -28,7 +29,7 @@ function ProjectsSection() {
           >
             <div className="relative h-40 bg-gradient-to-r from-blue-100 to-indigo-100 overflow-hidden">
               {project.image && (
-                <img 
+                <Image
                   src={project.image} 
                   alt={project.name}
                   className="w-full h-full object-cover"
