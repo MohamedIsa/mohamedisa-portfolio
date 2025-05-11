@@ -1,18 +1,39 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { MenuIcon, CloseIcon } from "@/components/ui/icons";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 20) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
-    <nav className="bg-gradient-to-r from-gray-900 to-gray-700 text-white py-4 fixed w-full z-10 shadow-md">
+    <nav className={`fixed w-full z-10 transition-colors duration-300 ${
+      scrolled 
+        ? "bg-white text-gray-900 shadow-md py-2" 
+        : "bg-transparent text-gray-900 py-4"
+    }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           
           <div className="text-2xl font-bold">
-            <Link href="/" className="text-white hover:text-blue-500 transition duration-300">
+            <Link href="/" className="hover:text-blue-500 transition-colors duration-300">
               Mohamed Isa
             </Link>
           </div>
@@ -21,73 +42,54 @@ function Navbar() {
           <div className="sm:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-white focus:outline-none"
+              className="focus:outline-none"
+              aria-label="Toggle menu"
             >
-              {isOpen ? (
-                <svg
-                  className="h-6 w-6"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                </svg>
-              ) : (
-                <svg
-                  className="h-6 w-6"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M4 6h16M4 12h16m-7 6h7"
-                  />
-                </svg>
-              )}
+              {isOpen ? <CloseIcon /> : <MenuIcon />}
             </button>
           </div>
 
          
-          <div className="hidden sm:flex space-x-6">
-            <Link href="#about" className="text-white hover:text-blue-500 transition duration-300">
-              About
+          <div className="hidden sm:flex space-x-8 items-center">
+            {["about", "MyWork", "contact"].map((item) => (
+              <Link 
+                key={item} 
+                href={`#${item}`} 
+                className="relative font-medium hover:text-blue-500 transition-colors duration-300 hover:after:w-full"
+              >
+                {item === "MyWork" ? "My Work" : item.charAt(0).toUpperCase() + item.slice(1)}
+              </Link>
+            ))}
+            <Link 
+              href="/MohamedCV.pdf" 
+              className="font-medium hover:text-blue-500 transition-colors duration-300"
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              Resume
             </Link>
-              <Link href="#MyWork" className="text-white hover:text-blue-500 transition duration-300">
-              My Work
-            </Link>
-            <Link href="#contact" className="text-white hover:text-blue-500 transition duration-300">
-              Contact
-            </Link>
-            <a href="/MohamedCV.pdf" className="text-white hover:text-blue-500 transition duration-300" target="_blank" rel="noopener noreferrer">
-              CV
-            </a>
           </div>
         </div>
-
-        {/* Mobile Menu */}
         {isOpen && (
-          <div className="sm:hidden mt-4 space-y-2">
-            <Link href="#about" className="block text-white hover:text-blue-500 transition duration-300">
-              About
-            </Link>
-            <Link href="#MyWork" className="block text-white hover:text-blue-500 transition duration-300">
-              My Work
-            </Link>
-            <Link href="#contact" className="block text-white hover:text-blue-500 transition duration-300">
-              Contact
-            </Link>
-            <a href="/MohamedCV.pdf" className="block text-white hover:text-blue-500 transition duration-300" target="_blank" rel="noopener noreferrer">
-              CV
+          <div className="sm:hidden mt-4 py-3 px-4 bg-white rounded-lg shadow-lg space-y-3">
+            {["about", "MyWork", "contact"].map((item) => (
+              <Link 
+                key={item} 
+                href={`#${item}`} 
+                className="block py-2 hover:text-blue-500 transition-colors duration-300"
+                onClick={() => setIsOpen(false)}
+              >
+                {item === "MyWork" ? "My Work" : item.charAt(0).toUpperCase() + item.slice(1)}
+              </Link>
+            ))}
+            <a 
+              href="/MohamedCV.pdf" 
+              className="block py-2 text-blue-600 hover:text-blue-800 transition-colors duration-300"
+              target="_blank" 
+              rel="noopener noreferrer"
+              onClick={() => setIsOpen(false)}
+            >
+              Resume
             </a>
           </div>
         )}

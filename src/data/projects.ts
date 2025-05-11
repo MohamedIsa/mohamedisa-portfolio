@@ -4,6 +4,8 @@ export interface Project {
   description: string;
   github: string;
   live?: string;
+  image?: string;
+  technologies?: string[];
 }
 
 export interface Projects {
@@ -20,6 +22,7 @@ export const projectsSection: Projects = {
       description:
         "A web-based application to create and manage questionnaires using PHP, HTML/CSS, JavaScript, and MySQL.",
       github: "https://github.com/MohammedBaqerAdnan/WebDevolpment_Project",
+      technologies: ["PHP", "HTML/CSS", "JavaScript", "MySQL"],
     },
     {
       id: 2,
@@ -28,6 +31,7 @@ export const projectsSection: Projects = {
         "A cross-platform app using Flutter and Firebase for managing dental clinic operations.",
       github: "https://github.com/MohamedIsa/Dental-Clinic-System",
       live: "https://dental-clinic-f6971.firebaseapp.com/",
+      technologies: ["Flutter", "Firebase", "Dart"],
     },
     {
       id: 3,
@@ -35,6 +39,7 @@ export const projectsSection: Projects = {
       description:
         "A Flutter app that allows students to take quizzes with Firebase for storage.",
       github: "https://github.com/MohamedIsa/QuizApp",
+      technologies: ["Flutter", "Firebase", "Dart"],
     },
   ],
 }; 

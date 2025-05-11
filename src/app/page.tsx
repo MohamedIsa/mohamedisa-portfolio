@@ -11,16 +11,29 @@ function Home() {
   return (
     <>
       <Navbar />
-      <main className="pt-24 mx-10">
+      <main className="overflow-hidden">
         <HeroSection />
-        <AboutSection />
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <AboutSection />
+        </div>
         <DevSkillsSection />
-        <ExperienceSection /> 
-        <SpokenLanguagesSection />
-        <ProjectsSection />
-        <ContactSection />
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <ExperienceSection /> 
+          <SpokenLanguagesSection />
+        </div>
+        <div className="bg-gray-50 py-4">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <ProjectsSection />
+          </div>
+        </div>
+        <div className="bg-blue-50">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <ContactSection />
+          </div>
+        </div>
       </main>
     </>
   );
 }
+
 export default Home;
