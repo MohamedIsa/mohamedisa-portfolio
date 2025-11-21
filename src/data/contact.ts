@@ -1,12 +1,12 @@
+import { About } from "./about";
+
 export interface ContactLink {
   name: string;
   url: string;
   icon: string;
 }
 
-export interface Contact {
-  title: string;
-  description: string;
+export interface Contact extends About {
   links: ContactLink[];
 }
 
@@ -31,4 +31,4 @@ export const contactSection: Contact = {
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg",
     },
   ],
-}; 
+};
