@@ -17,11 +17,11 @@ function HeroSection() {
           {heroSection.description}
         </p>
 
-        <div className="flex justify-center gap-6">
+        <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6">
           <Link href="#MyWork">
             <Button
               variant="default"
-              className="px-8 py-6 text-lg text-white bg-blue-600 hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 rounded-xl"
+              className="px-6 py-4 sm:px-8 sm:py-6 text-base sm:text-lg text-white bg-blue-600 hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 rounded-xl w-full sm:w-auto"
             >
               View My Work
             </Button>
@@ -30,7 +30,7 @@ function HeroSection() {
           <Link href="#contact">
             <Button
               variant="outline"
-              className="px-8 py-6 text-lg transition-all duration-300 border-2 border-gray-300 hover:border-blue-400 hover:bg-blue-50 shadow-lg hover:shadow-xl hover:-translate-y-1 rounded-xl"
+              className="px-6 py-4 sm:px-8 sm:py-6 text-base sm:text-lg transition-all duration-300 border-2 border-gray-300 hover:border-blue-400 hover:bg-blue-50 shadow-lg hover:shadow-xl hover:-translate-y-1 rounded-xl w-full sm:w-auto"
             >
               Contact Me
             </Button>
