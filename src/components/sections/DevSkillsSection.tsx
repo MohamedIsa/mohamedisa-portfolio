@@ -1,12 +1,9 @@
-"use client";
 import { devSkills } from "@/data/skills";
 import { Card, CardHeader, CardTitle } from "@/components/ui/card";
-import { useState } from "react";
+
 import Image from "next/image";
 
 function DevSkillsSection() {
-  const [hoveredSkill, setHoveredSkill] = useState<number | null>(null);
-
   return (
     <section id="dev-skills" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -24,11 +21,7 @@ function DevSkillsSection() {
           {devSkills.map((skill, index) => (
             <Card
               key={index}
-              className={`transition-colors duration-300 cursor-pointer border border-gray-200 hover:border-blue-300 ${
-                hoveredSkill === index ? "shadow-lg" : "shadow hover:shadow-md"
-              }`}
-              onMouseEnter={() => setHoveredSkill(index)}
-              onMouseLeave={() => setHoveredSkill(null)}
+              className={`transition-colors duration-300 cursor-pointer border border-gray-200 hover:border-blue-300 `}
             >
               <CardHeader className="flex flex-col items-center text-center p-4">
                 <div className="p-4 rounded-full bg-blue-50 mb-3">

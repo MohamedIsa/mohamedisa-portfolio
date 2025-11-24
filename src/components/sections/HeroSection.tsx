@@ -1,4 +1,3 @@
-"use client";
 import { heroSection } from "@/data/hero";
 import Link from "next/link";
 import { Button } from "../ui/button";

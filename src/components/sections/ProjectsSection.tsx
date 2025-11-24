@@ -1,13 +1,9 @@
-"use client";
 import { projectsSection } from "@/data/projects";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import { useState } from "react";
 import { GitHubIcon, GlobeIcon } from "@/components/ui/icons";
 import Image from "next/image";
 
 function ProjectsSection() {
-  const [hoveredProject, setHoveredProject] = useState<number | null>(null);
-
   return (
     <section id="MyWork" className="py-20">
       <div className="mb-12 text-center">
@@ -21,16 +17,10 @@ function ProjectsSection() {
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
-        {projectsSection.projects.map((project, index) => (
+        {projectsSection.projects.map((project) => (
           <Card
             key={project.id}
-            className={`group overflow-hidden border border-gray-200 hover:border-blue-300 transition-colors duration-300 ${
-              hoveredProject === index
-                ? "shadow-xl"
-                : "shadow-md hover:shadow-lg"
-            }`}
-            onMouseEnter={() => setHoveredProject(index)}
-            onMouseLeave={() => setHoveredProject(null)}
+            className={`group overflow-hidden border border-gray-200 hover:border-blue-300 transition-colors duration-300 `}
           >
             <div className="relative h-40 bg-gradient-to-r from-blue-100 to-indigo-100 overflow-hidden">
               {project.image && (

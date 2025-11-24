@@ -1,4 +1,3 @@
-"use client";
 import { experienceSection } from "@/data/experience";
 import {
   Card,
@@ -7,25 +6,18 @@ import {
   CardDescription,
   CardContent,
 } from "@/components/ui/card";
-import { useState } from "react";
 
 function ExperienceSection() {
-  const [hoveredExp, setHoveredExp] = useState<number | null>(null);
-
   return (
     <section id="experience" className="py-20">
       <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
         {experienceSection.title}
       </h2>
       <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-        {experienceSection.experiences.map((exp, index) => (
+        {experienceSection.experiences.map((exp) => (
           <Card
             key={exp.id}
-            className={`group transition-colors duration-300 border border-gray-200 hover:border-blue-300 ${
-              hoveredExp === index ? "shadow-lg" : "shadow hover:shadow-md"
-            }`}
-            onMouseEnter={() => setHoveredExp(index)}
-            onMouseLeave={() => setHoveredExp(null)}
+            className={`group transition-colors duration-300 border border-gray-200 hover:border-blue-300 cursor-pointer `}
           >
             <CardHeader className="p-6">
               <div className="mb-2 flex justify-between items-start">
