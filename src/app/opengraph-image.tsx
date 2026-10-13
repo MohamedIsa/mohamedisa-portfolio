@@ -53,7 +53,7 @@ export default function OpenGraphImage() {
           </div>
         </div>
         <div style={{ display: "flex", fontSize: 26, color: "#a1a1aa" }}>
-          mohamedisa.tech
+          {profile.siteUrl.replace("https://", "")}
         </div>
       </div>
     ),

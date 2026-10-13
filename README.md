@@ -1,4 +1,4 @@
-# mohamedisa.tech
+# Mohamed Isa – portfolio
 
 Personal portfolio, built with Next.js (App Router), TypeScript and Tailwind CSS. Deployed on Vercel.
 

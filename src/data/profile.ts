@@ -65,7 +65,7 @@ export const profile: Profile = {
   headline: "Mobile Engineer",
   location: "Sitra, Bahrain",
   email: "mohamed.isa.has@gmail.com",
-  siteUrl: "https://mohamedisa.tech",
+  siteUrl: "https://mohamedisa-portfolio.vercel.app",
   github: "https://github.com/MohamedIsa",
   linkedin: "https://www.linkedin.com/in/mohamed-isa122",
   cvPath: "/MohamedIsa_CV.pdf",
