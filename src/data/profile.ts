@@ -70,7 +70,7 @@ export const profile: Profile = {
   linkedin: "https://www.linkedin.com/in/mohamed-isa-0110b529b",
   cvPath: "/MohamedIsa_CV.pdf",
   about:
-    "Mobile engineer shipping cross-platform iOS and Android apps with React Native, Expo and TypeScript, previously Flutter. Work goes beyond the UI layer: release pipelines and code signing, app security hardening and assessment, production monitoring, and Node.js/PostgreSQL backend work on AWS.",
+    "Mobile engineer shipping cross-platform iOS and Android apps with React Native, Expo and TypeScript. Work goes beyond the UI layer: release pipelines and code signing, app security hardening and assessment, production monitoring, and Node.js/PostgreSQL backend work on AWS.",
   languages: ["Arabic", "English"],
 };
 
