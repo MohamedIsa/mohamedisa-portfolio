@@ -67,7 +67,7 @@ export const profile: Profile = {
   email: "mohamed.isa.has@gmail.com",
   siteUrl: "https://mohamedisa.tech",
   github: "https://github.com/MohamedIsa",
-  linkedin: "https://www.linkedin.com/in/mohamed-isa-0110b529b",
+  linkedin: "https://www.linkedin.com/in/mohamed-isa122",
   cvPath: "/MohamedIsa_CV.pdf",
   about:
     "Mobile engineer shipping cross-platform iOS and Android apps with React Native, Expo and TypeScript. Work goes beyond the UI layer: release pipelines and code signing, app security hardening and assessment, production monitoring, and Node.js/PostgreSQL backend work on AWS.",
