@@ -76,10 +76,11 @@ export const profile: Profile = {
 
 /** Short capability list shown in the hero; drawn from the About text. */
 export const focusAreas: string[] = [
+  "Cross-platform iOS & Android",
+  "React Native · Expo · TypeScript",
   "Release pipelines & code signing",
   "App security hardening & assessment",
   "Production monitoring",
-  "Node.js / PostgreSQL on AWS",
 ];
 
 export const experience: Experience[] = [
